@@ -1,0 +1,32 @@
+:root{
+    --container-bg:;
+    --text-color:;
+    --main-background:;
+    --red-bg: ;
+    --red-shadow:;
+    /* --red-hover:; */
+    --different-bg:;
+    --different-shadow:;
+    /* --different-hover:; */
+    --toggle-bg:;
+    --keys-bg:;
+    
+    --button-color:;
+    /* --button-hover; */
+}
+.container{
+    background-color: var(--container-bg);
+    color: var(--text-color);
+}
+.keys{
+    background-color: var(--keys-bg);
+}
+.main{
+    background-color: var(--main-background);
+}
+.toggle{
+    background-color: var(--toggle-bg);
+}
+ button{
+    
+}

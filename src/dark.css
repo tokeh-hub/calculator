@@ -1,0 +1,32 @@
+:root{
+    --container-bg:hsl(222, 26%, 31%);
+    --text-color:white;
+    --main-background:hsl(224, 36%, 15%);
+    --red-bg: hsl(6, 63%, 50%);
+    --red-shadow:1px 2px hsl(6, 70%, 34%);
+    /* --red-hover:; */
+    --different-bg:hsl(225, 21%, 49%);
+    --different-shadow:1px 2px hsl(224, 28%, 35%);
+    /* --different-hover:; */
+    --toggle-bg:hsl(224, 36%, 15%);
+    --keys-bg:hsl(222, 26%, 31%);
+    
+    /* --button-color:; */
+    /* --button-hover; */
+}
+.container{
+    background-color: var(--container-bg);
+    color: var(--text-color);
+}
+.keys{
+    background-color: var(--keys-bg);
+}
+.main{
+    background-color: var(--main-background);
+}
+.toggle{
+    background-color: var(--toggle-bg);
+}
+ button{
+    
+}
