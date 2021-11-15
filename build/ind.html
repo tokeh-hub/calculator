@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .toggle{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px auto;
+  /* width: 60px; */
+}
+label{
+  display: inline-block;
+  cursor: pointer;
+  width: 10px;
+  text-align: center;
+  background-color: blue;
+}
+label[dark-theme='dark']{
+  background-color: green;
+}
+/* input[type=radio]{
+  outline:none
+} */
+.selector{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background:  hsl(6, 63%, 50%);
+  position: absolute;
+  margin-top: -15px;
+  margin-left:4px;
+  transition: left 0.5s ease-in-out;
+}
+
+.switch-1:checked ~ .selector{
+  margin-left: 2px;
+}
+.switch-2:checked ~ .selector{
+  margin-left: 46px;
+}
+.switch-3:checked ~ .selector{
+  margin-left: 85px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class='toggle'>
+        <input  class='switch-1' name='toggle' type='radio' value='1' id="radio1"/>
+        <label for='switch-1' >1</label>
+
+        <input  class='switch-2' name='toggle' type='radio' value='2'/>
+        <label for='2'>2</label>
+
+        <input class='switch-3' name='toggle' type='radio' value='3'/>
+        <label for='3'>3</label>
+        <div class='selector'>&nbsp;</div>
+     </div>
+     
+</body>
+</html>
+<script>
+  const label = document.getElementsByTagName('label')
+  const radio1 = document.getElementById('radio1')
+  radio1.addEventListener('click' , event=>{event.target.checked? label.setAttribute('dark-theme','dark') : label.removeAttribute('dark-theme')})
+</script>
